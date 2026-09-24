@@ -2,7 +2,7 @@ from pathlib import Path
 
 from spark_joinery.pipeline import Pipeline
 
-from .collection import (
+from .transform import (
     compute_dimension_transitions,
     get_current_snapshot,
     get_previous_snapshot,
