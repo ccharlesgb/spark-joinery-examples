@@ -24,10 +24,10 @@ project-includes = [
     "**/*.ipynb",
 ]
 search-path = [
-    "order_product/src",
-    "snapshot_diff/src",
-    "customer_group/src",
-    "housing_linear_regression/src",
+    "order_product_example/src",
+    "snapshot_diff_example/src",
+    "customer_group_example/src",
+    "housing_linear_regression_example/src",
 ]
 
 [tool.uv.workspace]
