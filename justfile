@@ -21,4 +21,4 @@ format:
 check: lint types format test
 
 run-example example:
-    uv run --package {{ replace(trim_end_match(example, "/"), "_", "-") }} python -m {{ trim_end_match(example, "/") }}
+    uv run --package {{ replace(trim_end_match(example, "_example/"), "_", "-") }} python -m {{ trim_end_match(example, "_example/") }}
