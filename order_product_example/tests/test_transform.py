@@ -1,3 +1,4 @@
+from collections.abc import Generator
 from datetime import UTC, datetime
 
 import pytest
@@ -16,7 +17,7 @@ from spark_joinery import Schema
 
 
 @pytest.fixture(scope="session")
-def spark() -> SparkSession:
+def spark() -> Generator[SparkSession]:
     session = (
         SparkSession.builder.master("local[1]")
         .appName("order-product-transform-tests")
